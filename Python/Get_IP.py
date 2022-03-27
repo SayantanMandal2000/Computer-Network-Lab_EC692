@@ -1,3 +1,4 @@
+#Accessing the IP address of the local machine or any other machine.
 import socket
 host_name=socket.gethostname()
 ip1=socket.gethostbyname(host_name)
