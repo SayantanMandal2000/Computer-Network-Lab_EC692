@@ -1,0 +1,1 @@
+Write a **CRC checker** program in Python to receive the data stream coming from the other end,dividing with the same divisor polynomial using modulo-2 divison to check that if the data stream is non erroneous then no reminder should be coming or else if there is any remainder then the received stream is erroneous.
