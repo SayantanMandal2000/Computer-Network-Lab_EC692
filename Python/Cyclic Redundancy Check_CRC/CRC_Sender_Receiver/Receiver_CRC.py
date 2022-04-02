@@ -39,13 +39,6 @@ key = "1101"
 ans = decodeData(data,key)
 print("Remainder after decoding is->"+ans)
 temp = "0" * (len(key) - 1)
-"""
-if ans == temp:
-    s.sendto((data.decode()+" Received No error FOUND").encode(),('localhost',4444))
-else:
-    s.sendto(("Error in data").encode(),('localhost',4444))
-s.close()
-"""
 if ans==temp:
      print("No Error")
 else:
