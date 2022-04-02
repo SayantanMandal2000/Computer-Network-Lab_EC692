@@ -1,0 +1,1 @@
+Write  a CRC generator program to create a CRC based on modulo-2 division technique using the divisor polynomial and the data stream to be transmitted and after generating the CRC attach with the data stream.
