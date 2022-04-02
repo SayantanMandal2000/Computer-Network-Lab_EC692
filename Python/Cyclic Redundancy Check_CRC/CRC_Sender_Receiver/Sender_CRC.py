@@ -32,12 +32,10 @@ def encodeData(data, key):
     codeword = data + remainder
     return codeword   
      
-input_string = input("Enter data you want to send=")
-data =(''.join(format(ord(x),'b') for x in input_string))
+data = input("Enter data you want to send=")
 print("Entered data in binary format :",data)
 key = "1101"
 ans = encodeData(data,key)
-#print("Encoded data to be sent to server in binary format :",ans)
 s = socket.socket()               
 s.bind(('localhost',4444))
 s.listen(5)
@@ -46,4 +44,5 @@ while True:
     print('Connected with receiver',addr)
     print("Encoded data to be sent to server in binary format :",ans)
     conn.sendall(bytes(ans,'Utf-8'))
+    
     
