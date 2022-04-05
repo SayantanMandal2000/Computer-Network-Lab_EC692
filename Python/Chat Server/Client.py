@@ -9,10 +9,10 @@ print(server_name+" has joined....")
 while True:
     message=(s.recv(1024)).decode()
     print(server_name+" : "+message)
-    if message.lower()=='eye':
+    if message.lower()=='bye':
         break
     message=input("Name:")
-    if message.lower()=='eye':
+    if message.lower()=='bye':
         s.send(message.encode())
         break
     s.send(message.encode())
