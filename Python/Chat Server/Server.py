@@ -10,13 +10,13 @@ print(client+" has connected")
 conn.send(name.encode())
 while True:
     message=input("Name:")
-    if message.lower()=='eye':
+    if message.lower()=='bye':
         conn.send(message.encode())
         break    
     conn.send(message.encode())
     message=conn.recv(1024)
     message=message.decode()
-    if message.lower()=='eye':
+    if message.lower()=='bye':
         break 
     print(client+' : '+message)
     
